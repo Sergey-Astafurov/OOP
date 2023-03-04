@@ -9,7 +9,7 @@ public class CreatePeople {
         if (instance == null)
             instance = new CreatePeople();
             instance.init();
-            return instance;
+        return instance;
 
 
     }

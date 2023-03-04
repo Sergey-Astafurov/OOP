@@ -12,6 +12,7 @@ public class Main {
         /**Создаем члена семьи
          * p1 Сын
          */
+
         People p1 = CreatePeople.getInsctance()
                     .setFirstName("Сергей")
                     .setDay("1999-01-06")
