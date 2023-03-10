@@ -2,23 +2,17 @@ package oop_homme.houme_2;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import javax.sound.sampled.AudioFormat.Encoding;
+public class ExportJSON implements exportInterface {
+    private FileWriter fw;
+    private ArrayList<Task> repo = new ArrayList<>();
 
-import oop_homme.houme_11.People;
-
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.FileReader;
-
- class Export  extends TaskRepository {
-    FileWriter fw;
-    ArrayList<Task> repo = new ArrayList<>();
-
-    public void export(TaskRepository repo)  {
-        try (PrintWriter writer = new PrintWriter(new File("oop_homme/houme_2/exp.csv"))) {
+    @Override
+    public void export(TaskRepository repo) {
+        try (PrintWriter writer = new PrintWriter(new File("oop_homme/houme_2/exp.json"))) {
 
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < repo.getSize(); i++) {
@@ -26,7 +20,6 @@ import java.io.FileReader;
                 sb.append("\n");
 
             }
-
 
             writer.write(sb.toString());
             writer.close();
@@ -37,8 +30,5 @@ import java.io.FileReader;
         }
 
     }
+
 }
-
-
-
-

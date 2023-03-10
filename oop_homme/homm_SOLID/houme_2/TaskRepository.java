@@ -4,11 +4,9 @@
  * у него внутри только то за что он отвечает
  *
  */
-package oop_homme.houme_2;
+package oop_homme.homm_SOLID.houme_2;
 
 import java.util.ArrayList;
-import java.util.List;
-
 
 public class TaskRepository {
 

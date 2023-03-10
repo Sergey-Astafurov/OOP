@@ -1,4 +1,4 @@
-package oop_homme.houme_2;
+package oop_homme.homm_SOLID.houme_2;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -15,7 +15,6 @@ public class AddTask extends Task {
         System.out.println("Введите сегодняшнюю дату пример: (2010-10-01)");
         String date = input.next();
         String time = LocalTime.now().toString();
-        Task task = new Task();
         this.name = name;
         this.id = TaskCreator.counter;
         this.priority = Priority.LOW;

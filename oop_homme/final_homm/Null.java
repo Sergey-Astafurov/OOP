@@ -5,4 +5,6 @@ public class Null implements IInterface{
     public void print() {
         System.out.println("Null!");
     }
+
+
 }

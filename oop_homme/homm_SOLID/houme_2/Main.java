@@ -1,4 +1,4 @@
-package oop_homme.houme_2;
+package oop_homme.homm_SOLID.houme_2;
 
 public class Main {
         public static void main(String[] args) {
@@ -28,7 +28,6 @@ public class Main {
                 tr.setTask(t3);
                 ExportCsv ex = new ExportCsv();
                 ex.export(tr);
-                ImportCsv im = new ImportCsv();
                 AddTask add1 = new AddTask();
                 // add1.addNewTask();
                 tr.setTask(add1);
